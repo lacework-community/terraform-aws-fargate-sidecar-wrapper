@@ -50,6 +50,8 @@ When you provide this module a complete container definition JSON block, the fol
 | <a name="family"></a> [family](#family) | A unique name for your task definition. | `string` | `""` | yes |
 | <a name="container_definition_json"></a> [container\_definition\_json](#container\_definition\_json) | The container definition one would pass to aws_ecs_task_definition. | `string` | `""` | yes |
 | <a name="lacework_access_token"></a> [lacework\_access\_token](#lacework\_access\_token) | A valid Lacework Access Token. | `string` | `""` | yes |
+| <a name="execution_role_arn"></a> [execution\_role\_arn](#execution\_role\_arn) | ARN of the task execution role that the Amazon ECS container agent and the Docker daemon can assume. | `string` | `""` | no |
+| <a name="tags"></a> [tags](#tags) | A map/dictionary of Tags to be assigned to created resources. | `key-value map` | `{}` | no |
 
 ## Outputs
 

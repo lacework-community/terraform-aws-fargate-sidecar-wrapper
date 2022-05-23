@@ -18,3 +18,13 @@ variable "lacework_access_token" {
   type        = string
   description = "(Required) A valid Lacework Access Token"
 }
+variable "execution_role_arn" {
+  type        = string
+  description = "(Optional) ARN of the task execution role that the Amazon ECS container agent and the Docker daemon can assume."
+  default     = ""
+}
+variable "tags" {
+  type        = map(string)
+  description = "A map/dictionary of Tags to be assigned to created resources"
+  default     = {}
+}

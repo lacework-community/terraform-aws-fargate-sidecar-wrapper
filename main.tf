@@ -13,10 +13,12 @@ data "external" "sidecarinjector" {
 }
 
 resource "aws_ecs_task_definition" "task_definition" {
-  family = var.family
+  family                   = var.family
   requires_compatibilities = ["FARGATE"]
   network_mode             = "awsvpc"
   cpu                      = var.cpu
   memory                   = var.memory
   container_definitions    = data.external.sidecarinjector.result.container_definition_json
+  execution_role_arn       = var.execution_role_arn
+  tags                     = var.tags
 }
