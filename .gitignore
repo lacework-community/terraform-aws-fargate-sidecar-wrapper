@@ -35,6 +35,7 @@ override.tf.json
 # Credentials Files
 **/credentials.json
 **/*.json
+!examples/test/sample-container-definition.json
 
 # Local testing variables
 *.tfvars

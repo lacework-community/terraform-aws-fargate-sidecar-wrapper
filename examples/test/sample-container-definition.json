@@ -1,0 +1,15 @@
+[
+  {
+    "name": "main-application",
+    "image": "nginx:latest",
+    "cpu": 0,
+    "portMappings": [
+      {
+        "containerPort": 80,
+        "hostPort": 80,
+        "protocol": "tcp"
+      }
+    ],
+    "mountPoints": []
+  }
+]
