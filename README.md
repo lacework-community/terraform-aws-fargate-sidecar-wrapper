@@ -26,6 +26,7 @@ When you provide this module a complete container definition JSON block, the fol
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.12.31 |
 | <a name="requirement_docker"></a> [docker](#requirement\_docker) | ~> 20.0 |
+| <a name="requirement_python"></a> [python](#requirement\_docker) | ~> 3.0 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 4.0 |
 
 ## Providers
